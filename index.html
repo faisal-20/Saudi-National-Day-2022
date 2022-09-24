@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=20, initial-scale=1.0">
+    <title>National Day 2022</title>
+    <style>
+        :root{
+            --main-color:#53b931;
+        }         
+        body {
+            background-color: #efefef;
+            font-family: arial, Tahoma;
+        }
+        header{
+            width: 100%;
+            max-width: 1300px;
+            margin: auto;
+        }
+        section{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+        .container{
+            min-width: 300px;
+            margin: 20px auto;
+        }
+
+
+        fieldset {
+            background: #fff;
+            border: 1px solid #cccccc;
+            padding: 20px;
+            margin: 20px auto;
+        }
+        p{
+            background-color: var(--main-color);
+            padding: 20px;
+            color: white;
+            text-transform: uppercase;
+        }
+        legend {
+            background-color: #fff;
+            border: 1px solid #cccccc;
+            padding: 10px;
+            text-transform: capitalize;
+        }
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+        label[name="gender"],
+        label[name="sur"]{
+            display: inline;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select {
+            padding: 8px;
+            max-width: 65%;
+            min-width: 45%;
+            display: block;
+        }
+        input[type="submit"],
+        input[type="reset"]{
+            padding: 10px 15px;
+            font-size: 1.2em;
+            margin: 10px 5px;
+            background-color: var(--main-color);
+            color: white;
+            border: none;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover{
+            background-color: #cccccc;
+
+        }
+        hr {
+            border: 1px solid #eeeeee;
+        }
+        textarea {
+            min-width: 300px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+            /* Small */
+        @media (min-width:768px){
+            .container,
+            header{
+                width: 750px;
+            }
+            body{
+                font-size: 12px;
+            }
+        }
+
+        /* Medium */
+        @media (min-width: 992px){
+            .container,
+            header{
+                width: 970px;
+            }
+            body{
+                font-size: 16px;
+            }
+        }
+
+        /* Large */
+        @media (min-width: 1200px){
+            .container,
+            header{
+                width: 1170px;
+            }
+            body{
+                font-size: 18px;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <header><img src="images/realistic-horizontal-banner-template-saudi-national-day/7658057.svg" alt="saudi national day banner"></header>
+    <section>
+        <div class="container">
+            <p>Below is a survey on national day celebration.</p>
+            <form method="get" action="" name="survey">
+                <fieldset>
+                    <legend>Please take a few moments to complete this questionnaire.</legend>
+                    
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name"/>
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email">
+                    
+                    <label for="gender">Your Gender:</label>
+                    <label for="male" name="gender"><input type="radio" name="gender" value="male" id="male" checked >Male</label>
+                    <label for="female" name="gender"><input type="radio" name="gender" value="female" id="female">Female</label>
+
+                    <label for="age">Age:</label>
+                    <input type="text" id="age">
+                </fieldset>
+                <fieldset>
+                    <legend for="region">Which region in the kingdom from:</legend>
+                    <select name="region">
+                        <option selected="selected">- Select -</option>
+                        <option value="RYD">Al-riyadh</option>
+                        <option value="MKM">Makkah al-Mukarramah</option>
+                        <option value="MDM">Al-Madinah al-Munawwarah</option>
+                        <option value="QSM">Al-Qasim</option>
+                        <option value="SHQ">Ash-Sharqiyah</option>
+                        <option value="ASI">Asir </option>
+                        <option value="TBK">Tabouk</option>
+                        <option value="HAL">Ha'il</option>
+                        <option value="HDS">Al-Hudud ash-Shamaliyah</option>
+                        <option value="JIZ">Jizan</option>
+                        <option value="NJR">Najran</option>
+                        <option value="BAH">Al-Bahah</option>
+                        <option value="JWF">Al-Jawf</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend for="">Which of the following would you consider to celebrate the national day:</legend>
+                    <label for="fg"><input type="checkbox" id="fg"  value="Family Gathering">Family Gathering</label>
+                    <label for="fs"><input type="checkbox" id="fs"  value="Fireworks Show">Fireworks Show</label>
+                    <label for="se"><input type="checkbox" id="se"  value="Sport Events">Sport Events</label>
+                    <label for="di"><input type="checkbox" id="di"  value="Dress In National Colors">Dress In National Colors</label>
+                    <label for="fp"><input type="checkbox" id="fp"  value="Festival Parade">Festival Parade</label>
+                    <label for="o"><input type="checkbox" id="o"  value="Others" checked>Others</label>
+                </fieldset>
+                <fieldset>
+                    <legend name="sur">Would you intrusted to participate in organizing events for national day celebration:</legend>
+                    <label name="sur" for=""><input name="sur" type="radio" value="Definitely">Definitely</label>
+                    <label name="sur" for=""><input name="sur" type="radio" value="Probably">Probably</label>
+                    <label name="sur" for=""><input name="sur" type="radio" value="Probably not">Probably not</label>
+                    <label name="sur" for=""><input name="sur" type="radio" value="Defiantly not">Defiantly not</label>
+                    <label name="sur" for=""><input name="sur" type="radio" value="Unsure">Unsure</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What is your wishes and expectation, what do you want to say to the country on the national day?</legend>
+                    <textarea name="" id="" cols="" rows=""></textarea>  
+                </fieldset>
+                
+                    <input type="submit" name="" id="" value="Submit" />
+                    <input type="reset" name="" id="" value="Start Over">
+                
+            </form>
+        </div>
+    </section>
+</body>
+</html>
